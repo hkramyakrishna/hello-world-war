@@ -7,7 +7,7 @@ pipeline {
                 sh "git clone https://github.com/hkramyakrishna/hello-world-war.git"
             }
         }
-        stage('Test') {
+        stage('test') {
             steps {
                 echo 'Testing..'
             }
