@@ -20,9 +20,9 @@ pipeline {
                 sh "test envi"
             }
         }
-        stage ('Deploy') {
+        stage ('test') {
             steps {
-                echo "deploy"
+                echo "test"
             }
         }
     }
