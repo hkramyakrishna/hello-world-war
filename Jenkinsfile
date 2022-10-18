@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('checkout') {
             steps {
-                echo 'Building..'
+                sh "git clone https://github.com/hkramyakrishna/hello-world-war.git"
             }
         }
         stage('Test') {
