@@ -17,12 +17,12 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh "test envi"
+                sh "cp /home/slave4/workspace/tomtest1/target/hello-world-war-1.0.0.war /opt/tomcat/webapps"
             }
         }
         stage ('test') {
             steps {
-                echo "test"
+                echo "done"
             }
         }
     }
